@@ -121,7 +121,7 @@ span {
 .card__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.5rem 0;
+    padding: 1.5rem 2.9375rem;
     border-top: 1px solid var(--border-color);
 }
 .card__features__item {
