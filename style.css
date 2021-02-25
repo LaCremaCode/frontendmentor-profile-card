@@ -55,8 +55,8 @@ body {
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0;
-    background: url(./assets/Oval-left.svg) top left/65% no-repeat,
-        url(./assets/Oval-right.svg) bottom right/70% no-repeat;
+    background: url(./assets/Oval-left.svg) top left/62% no-repeat,
+        url(./assets/Oval-right.svg) bottom right/67% no-repeat;
 }
 p,
 span {
@@ -95,9 +95,8 @@ span {
 }
 .card__info {
     position: absolute;
-    top: 86.1px;
+    top: 86px;
     text-align: center;
-    margin-top: 0.3rem;
 }
 .card__info__location {
     font-size: var(--text-normal);
@@ -122,8 +121,9 @@ span {
 .card__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.5rem 3.365rem 1.5rem 2.9375rem;
+    padding: 1.5rem 3.365rem;
     border-top: 1px solid var(--border-color);
+    column-gap: 2rem;
 }
 .card__features__item {
     text-align: center;
