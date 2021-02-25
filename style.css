@@ -9,17 +9,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
 /* CSS Variables*/
 :root {
     /* Colors */
-    --body-bg: hsl(185, 75, 39);
-    --text-color: hsl(228, 10, 47);
-    --title-color: hsl(228, 23, 23);
+    --body-bg: #168e99;
+    --text-color: #6b7082;
+    --title-color: #2e3349;
+    --border-color: #e8e9ec;
     --card-bg: #fff;
+    --card-width: 350px;
+    --card-height: 374px;
 
     /* Text sizes */
 
@@ -35,4 +39,88 @@ h6 {
 
     /* Borders */
     --border: 15px;
+}
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+html {
+    background-color: var(--body-bg);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    background: url(./assets/Oval-left.svg) top left/65% no-repeat,
+        url(./assets/Oval-right.svg) bottom right/70% no-repeat;
+}
+p,
+span {
+    color: var(--text-color);
+}
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border);
+    max-width: var(--card-width);
+    height: var(--card-height);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+}
+.card__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transform: translateY(2rem);
+}
+.card::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/Oval-pattern.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 0.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card__info__location {
+    font-size: var(--text-normal);
+}
+.card__info__title,
+.card__features__item__title,
+.card__info__age {
+    color: var(--title-color);
+    font-size: var(--text-big);
+}
+.card__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.card__features__item {
+    text-align: center;
+}
+.card__features__item__title {
+    margin-bottom: 0.5rem;
+}
+.card__features__item__name {
+    font-size: var(--text-small);
 }

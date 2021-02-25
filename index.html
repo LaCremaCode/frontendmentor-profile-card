@@ -5,31 +5,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Profile Card</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <main>
-            <article>
-                <headear class="avatar__image">
-                    <img src="" class="img" />
-                    <div class="user__title">
-                        <h1>Victor Crest</h1>
-                        <span>26</span>
+        <main class="container">
+            <article class="card">
+                <headear class="card__avatar">
+                    <img src="./assets/Oval.png" class="card__avatar__image" />
+                    <div class="card__info">
+                        <h1 class="card__info__title">Victor Crest</h1>
+                        <span class="card__info__age">26</span>
                     </div>
-                    <p class="user__location">London</p>
+                    <p class="card__info__location">London</p>
                 </headear>
-                <footer class="features">
-                    <div class="features__item">
-                        <h2 class="features__item__title">80k</h2>
-                        <p class="features__item__name">Followers</p>
+                <footer class="card__features">
+                    <div class="card__features__item">
+                        <h2 class="card__features__item__title">80k</h2>
+                        <p class="card__features__item__name">Followers</p>
                     </div>
-                    <div class="features__item">
-                        <h2 class="features__item__title">803k</h2>
-                        <p class="features_item__name">Likes</p>
+                    <div class="card__features__item">
+                        <h2 class="card__features__item__title">803k</h2>
+                        <p class="card__features__item__name">Likes</p>
                     </div>
-                    <div class="features__item">
-                        <h2 class="features__item__title">1.4k</h2>
-                        <p class="features__item__name">photos</p>
+                    <div class="card__features__item">
+                        <h2 class="card__features__item__title">1.4k</h2>
+                        <p class="card__features__item__name">Photos</p>
                     </div>
                 </footer>
             </article>
