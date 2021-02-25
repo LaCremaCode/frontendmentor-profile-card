@@ -17,7 +17,7 @@ p {
 /* CSS Variables*/
 :root {
     /* Colors */
-    --body-bg: #168e99;
+    --body-bg: #19a1ae;
     --text-color: #6b7082;
     --title-color: #2e3349;
     --border-color: #e8e9ec;
@@ -115,7 +115,7 @@ span {
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 0.5rem;
-    margin-bottom: 0.8125rem;
+    margin-bottom: 0.5rem;
     margin-top: 1.2rem;
 }
 .card__features {
@@ -132,4 +132,5 @@ span {
 }
 .card__features__item__name {
     font-size: var(--text-small);
+    letter-spacing: 1.5px;
 }
