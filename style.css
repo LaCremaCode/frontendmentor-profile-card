@@ -92,12 +92,12 @@ span {
     align-items: center;
     background: url(./assets/Oval-pattern.svg) no-repeat;
     position: relative;
-    margin-top: 0.3rem;
 }
 .card__info {
     position: absolute;
     top: 86.1px;
     text-align: center;
+    margin-top: 0.3rem;
 }
 .card__info__location {
     font-size: var(--text-normal);
@@ -122,7 +122,7 @@ span {
 .card__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.7rem 0;
+    padding: 1.5rem 3.365rem 1.5rem 2.9375rem;
     border-top: 1px solid var(--border-color);
 }
 .card__features__item {
